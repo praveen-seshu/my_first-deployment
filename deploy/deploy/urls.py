@@ -18,8 +18,18 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from basic.views import home
+from basic.views import sample_response,response2,response_json,response_list,response3,querry_per,info,filtering,filterinfo
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home/', home)
+    path('home/', home),
+    path('sample_response/',sample_response),
+    path('response2/',response2),
+    path('response_json/',response_json),
+    path('response_list',response_list),
+    path('response3/',response3),
+    path('querry_per/',querry_per),
+    path('info/',info),
+    path('filtering/',filtering),
+    path('filterinfo/',filterinfo)
 ]
